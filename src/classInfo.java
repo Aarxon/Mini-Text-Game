@@ -1,12 +1,13 @@
+
 public class classInfo
 {
-    private String Warrior;
-    private String Assassin;
-    private String Archer;
-    private String Mage;
+    final private String Warrior = "Warrior";
+    final private String Assassin = "Assassin";
+    final private String Archer = "Archer";
+    final private String Mage = "Mage";
 
     //WarriorsStats
-    private int warriorHealth = 250;
+    final private int warriorHealth = 250;
     private int warriorArmor = 300;
 
     //AssassinStats
@@ -23,11 +24,14 @@ public class classInfo
     private int mageMana = 300;
 
 
+
+
     public classInfo() // constructor
     {
 
     }
 
+    //To print out the stats for each class before picking
     public void WarriorStatsShow()
     {
         System.out.println("Health : " + warriorHealth);
@@ -53,4 +57,71 @@ public class classInfo
         System.out.println("Mana : " + mageMana);
     }
 
+    //Getting the class names
+    public String getWarrior()
+    {
+        return Warrior;
+    }
+
+    public String getAssassin()
+    {
+        return Assassin;
+    }
+
+    public String getArcher()
+    {
+        return Archer;
+    }
+
+    public String getMage()
+    {
+        return Mage;
+    }
+
+    //Using this to get the stats to later set to the player stats when they choose a character... feel like theres a better way to do this that isnt as long
+    public int getWarriorHealth()
+    {
+        return warriorHealth;
+    }
+    public int getWarriorArmor()
+    {
+        return warriorArmor;
+    }
+
+    public int getAssassinHealth()
+    {
+        return assassinHealth;
+    }
+
+    public int getAssassinArmor()
+    {
+        return assassinArmor;
+    }
+
+    public int getArcherHealth()
+    {
+        return archerHealth;
+    }
+
+    public int getArcherArmor()
+    {
+        return archerArmor;
+    }
+
+    public int getMageHealth()
+    {
+        return mageHealth;
+    }
+
+    public int getMageArmor()
+    {
+        return mageArmor;
+    }
+
+    public int getMageMana()
+    {
+        return mageMana;
+    }
+
 }
+
